@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center">PASCASARJANA</h1>
+    <h2 align="justify">Terdiri dari :</h2>
+    <p align="justify">Doktor Pendidikan;
+        Doktor Ilmu Akuntansi;
+        Magister Ilmu Hukum;
+        Magister Ilmu Pertanian;
+        Magister Administrasi Publik;
+        Magister Akuntansi;
+        Magister Ilmu Komunikasi;
+        Magister Manajemen;
+        Magister Teknik Kimia;
+        Pendidikan Bahasa Indonesia;
+        Pendidikan Bahasa Inggris;
+        Pendidikan Matematika;
+        Teknologi Pendidikan.</p>
+    
+        {{title | upper }} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+        {% endfor %}
+
+{% endblock %}

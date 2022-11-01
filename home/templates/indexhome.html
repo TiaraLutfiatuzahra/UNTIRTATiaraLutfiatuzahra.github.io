@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center">UNIVERSITAS SULTAN AGENG TIRTAYASA</h1>
+    <h2 align="center">SELAMAT DATANG DI UNTIRTA</h2>
+    <p align="justify">Universitas Sultan Ageng Tirtayasa disingkat Untirta, adalah PTN (Perguruan Tinggi Negeri) yang terdapat di Provinsi Banten, Indonesia. Dengan kampus utama di Serang, kampus Fakultas Teknik yang berada di Cilegon dan Fakultas Keguruan yang berada di Ciwaru.
+        Selaku Perguruan tinggi, mahasiswa dan dosen senantiasa melakukan penelitian-penelitian dan pengabdian yang mengarah ke berbagai bidang untuk kemajuan bangsa Indonesia ke depannya.
+        Universitas Sultan Ageng Tirtayasa memiliki jargon yaitu JAWARA yaitu singkatan dari Jujur, Adil, Wibawa, Amanah, Religius, dan Akuntabel.
+        “UNTIRTA merupakan rumah yang tidak hanya berperan sebagai tempat, namun juga sebagai sumber pengetahuan, keteladanan, dan kebajikan. Oleh karena itu seluruh sivitas akademikanya berkewajiban menjunjung tinggi nilai-nilai dasar dalam melaksanakan tugas dan tanggungjawabnya.” (Sulaiman. 2019)</p>
+    <h4 align="center">VISI & MISI</h4>
+    <p>VISI :</p>
+    <p align="justify">Terwujudnya UNTIRTA Sebagai Integrated Smart and Green (It’S Green) University yang UNGGUL, BERKARAKTER DAN BERDAYA SAING, di Kawasan ASEAN tahun 2030</p>
+        
+        {{title | upper }} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+        {% endfor %}
+
+{% endblock %}
