@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <center><h1>FAKULTAS PERTANIAN</h1></center>
+
+    <center><img src="https://agribisnis.faperta.untirta.ac.id/wp-content/uploads/2019/06/logo.png", width="25%"></center>
+
+    <h2>Terdiri dari :</h2>
+    <p>Agribisnis, Agroekoteknologi, Ilmu Perikanan, dan Teknologi Pangan </p>
+
+    {{title | upper }} <br>
+    {% for s1 in s1 %}
+        <li>{{s1}}</li>
+    {% endfor %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>NIP</th>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Foto</th>
+                        <th>Email</th>
+                        <th>Fakultas</th>
+                        <th>Prodi</th>
+                        <th>Alamat Rumah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for views in faperta %}
+                    <tr>
+                        <td>{{ dosen.nip }}</td>
+                        <td>{{ dosen.nama }}</td>
+                        <td>{{ dosen.tanggal_lahir }}</td>
+                        <td>{{ dosen.foto }}</td>
+                        <td>{{ dosen.email  }}</td>
+                        <td>{{ dosen.fakultas  }}</td>
+                        <td>{{ dosen.prodi }}</td>
+                        <td>{{ dosen.alamat_rumah }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endblock %}

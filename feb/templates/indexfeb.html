@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center">FAKULTAS EKONOMI DAN BISNIS</h1>
+    <h2 align="justify">Terdiri dari :</h2>
+    <p align="justify">Sarjana Managemen; 
+        Sarjana Akuntansi;
+        Sarjana Ilmu Ekonomi Pembangunan;
+        Sarjana Ekonomi Syariah;
+        Diploma III Akuntansi;
+        Diploma III Marketing;
+        Diploma III Perpajakan;
+        Diploma III Keuangan Perbankan.</p>
+    
+        {{title | upper }} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+        {% endfor %}
+
+{% endblock %}
+
+{% extends 'base.html' %}
+
+{% block content %}

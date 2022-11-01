@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center">FAKULTAS HUKUM</h1>
+    <h2 align="justify">Terdiri dari :</h2>
+    <p align="justify">Sarjana Ilmu Hukum</p>
+    
+    {{title | upper }} <br>
+    {% for S1 in S1 %}
+        <li>{{S1}}</li>
+    {% endfor %}
+
+{% endblock %}
