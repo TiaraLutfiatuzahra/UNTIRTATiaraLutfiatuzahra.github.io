@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 align="center">FAKULTAS KEGURUAN DAN ILMU PENGETAHUAN</h1>
+    <h2 align="justify">Terdiri dari :</h2>
+    <p align="justify">Sarjana Pendidikan Nonformal;
+        Sarjana Pendidikan Bahasa Indonesia;
+        Sarjana Pendidikan Bahasa Inggris;
+        Sarjana Pendidikan Biologi;
+        Sarjana Pendidikan Matematika;
+        Sarjana Pendidikan Guru Sekolah Dasar;
+        Sarjana Pendidikan Guru PAUD;
+        Sarjana Bimbingan dan Konseling;
+        Sarjana Pendidikan Fisika;
+        Sarjana Pendidikan Ilmu Pengetahuan Alam;
+        Sarjana Pendidikan Kimia;
+        Sarjana Pendidikan Khusus;
+        Sarjana Pendidikan Pancasila dan Kewarganegaraan;
+        Sarjana Pendidikan Sejarah;
+        Sarjana Pendidikan Seni dan Pertunjukan;
+        Sarjana Pendidikan Sosiologi;
+        Sarjana Pendidikan Vokasional Teknik Elektro;
+        Sarjana Pendidikan Vokasional Teknik Mesin.</p>
+    
+        {{title | upper }} <br>
+        {% for S1 in S1 %}
+            <li>{{S1}}</li>
+        {% endfor %}
+
+{% endblock %}
